@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--焦点计算偏移量id-->
+    <item name="focushandler_tag_offset" type="id" />
+</resources>
