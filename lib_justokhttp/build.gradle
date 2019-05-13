@@ -1,0 +1,22 @@
+apply plugin: 'com.android.library'
+android {
+    compileSdkVersion 28
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+
+//        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+    }
+
+    dependencies {
+        implementation 'com.squareup.okhttp3:okhttp:3.11.0'
+        implementation project(':lib_justokhttp_compiler')
+        annotationProcessor project(':lib_justokhttp_compiler')
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+}
