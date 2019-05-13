@@ -7,8 +7,8 @@ import com.wyt.lib_justokhttp.method.ServiceMethod;
  */
 public class OkHttpCall<T> implements Call<T> {
 
-    ServiceMethod serviceMethod;
-    Callback<T> callback;
+    private ServiceMethod serviceMethod;
+    private Callback<T> callback;
 
     public OkHttpCall(ServiceMethod serviceMethod) {
         this.serviceMethod = serviceMethod;
